@@ -1,5 +1,7 @@
+'use client'
+
 export default function Footer() {
-  const bucketSlug = process.env.COSMIC_BUCKET_SLUG || 'model-agency-production'
+  const bucketSlug = process.env.NEXT_PUBLIC_COSMIC_BUCKET_SLUG || 'model-agency-production'
 
   return (
     <footer className="bg-gray-900 text-white py-12">
