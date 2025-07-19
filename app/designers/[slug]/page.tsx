@@ -54,7 +54,7 @@ export default async function DesignerPage({ params }: DesignerPageProps) {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <TalentProfile talent={designer} type="designer" />
+        <TalentProfile talent={designer} />
       </main>
       <Footer />
     </div>

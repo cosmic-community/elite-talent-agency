@@ -13,9 +13,9 @@ export default function TalentProfile({ talent }: TalentProfileProps) {
   };
 
   const getContactInfo = () => {
-    const { email, phone } = talent.metadata;
+    const { email } = talent.metadata;
     if (isModel(talent)) {
-      return { email, phone };
+      return { email, phone: talent.metadata.phone };
     }
     return { email, website: talent.metadata.website, instagram: talent.metadata.instagram };
   };

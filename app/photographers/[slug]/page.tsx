@@ -54,7 +54,7 @@ export default async function PhotographerPage({ params }: PhotographerPageProps
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <TalentProfile talent={photographer} type="photographer" />
+        <TalentProfile talent={photographer} />
       </main>
       <Footer />
     </div>

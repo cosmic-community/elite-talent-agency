@@ -54,7 +54,7 @@ export default async function ModelPage({ params }: ModelPageProps) {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <TalentProfile talent={model} type="model" />
+        <TalentProfile talent={model} />
       </main>
       <Footer />
     </div>
