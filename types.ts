@@ -110,8 +110,8 @@ export function isDesigner(obj: CosmicObject): obj is Designer {
   return obj.type === 'designers';
 }
 
-// Utility types
-export type OptionalMetadata<T> = Partial<T['metadata']>;
+// Utility types - Fixed the type indexing issue
+export type OptionalMetadata<T extends TalentProfile> = Partial<T['metadata']>;
 export type CreateTalentData<T extends TalentProfile> = Omit<T, 'id' | 'created_at' | 'modified_at'>;
 
 // Filter types for search functionality
